@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title></title>
+ 	<style type="text/css">
+ 		.box1 {
+ 			background: ;
+ 			height: 100px;
+ 			width: 100px;
+ 			position: absolute;
+ 			top: 800px;
+ 			left: 500px;
+ 		}
+
+ 		.box2 {
+ 			background: ;
+ 			height: 100px;
+ 			width: 100px;
+ 			position: absolute;
+ 			top: 600px;
+ 			left: 1400px;
+ 		}
+
+ 		.box3 {
+ 			background: ;
+ 			height: 100px;
+ 			width: 100px;
+ 			position: absolute;
+ 			top: 350px;
+ 			left: 1400px;
+ 		}
+
+ 		.box4 {
+ 			background: ;
+ 			height: 100px;
+ 			width: 100px;
+ 			position: absolute;
+ 			top: 680px;
+ 			left: 440px;
+ 		}
+
+
+ 		.box5 {
+ 			background:  ;
+ 			height: 100px;
+ 			width: 100px;
+ 			position: absolute;
+ 			top: 420px;
+ 			left: 1200px;
+ 		}
+ 		.body {
+ 			background-image: url("2.jpg");		
+ 			background-size: cover;
+ 		}
+
+ 		.panel {
+ 			background: orange;
+ 			height: 300px;
+ 			width: 200px;
+		}
+ 	</style>
+ </head>
+ <body class="body">
+ 	<div class="panel">
+ 		<h1>Очки:<span class="point">0</span></h1>
+ 		<p class="red">7.62 mm</p>
+ 		<p class="blue">12 mm</p>
+ 		<p class="green">Стрелы арбалета</p>
+ 		<p class="gold">300 mg</p>
+ 		<p class="pink">5.56 mm</p>
+ 	</div>
+
+ 	<div class="box1">
+ 		<img src="22.png" style="height: 20px;">
+ 	</div>
+ 	<div class="box2">
+ 		<img src="11.png" style="height: 10px;">
+ 	</div>
+
+ 	<div class="box3">
+ 		<img src="44.png" style="height: 30px;">
+ 	</div>
+
+ 		<div class="box4">
+ 		<img src="33.png" style="height: 10px;">
+ 	</div>
+
+ 		<div class="box5">
+ 		<img src="55.png" style="height: 10px;">
+ 	</div>
+
+
+
+ <script type="text/javascript">
+ 	let score = 0;
+ 	document.querySelector(".box1").onclick = function() {
+ 		score = score + 1;
+ 		document.querySelector(".box1").style.display = "none"
+ 		document.querySelector(".point").innerHTML = score;
+ 		document.querySelector(".red").style.textDecoration = "line-through"
+ 	}
+
+ 		document.querySelector(".box2").onclick = function() {
+ 		score = score + 1;
+ 		document.querySelector(".box2").style.display = "none"
+ 		document.querySelector(".point").innerHTML = score;
+ 		document.querySelector(".blue").style.textDecoration = "line-through"
+ 	}
+
+ 	document.querySelector(".box3").onclick = function() {
+ 		score = score + 1;
+ 		document.querySelector(".box3").style.display = "none"
+ 		document.querySelector(".point").innerHTML = score;
+ 		document.querySelector(".green").style.textDecoration = "line-through"
+ 	}
+
+ 		document.querySelector(".box4").onclick = function() {
+ 		score = score + 1;
+ 		document.querySelector(".box4").style.display = "none"
+ 		document.querySelector(".point").innerHTML = score;
+ 		document.querySelector(".gold").style.textDecoration = "line-through"
+ 	}
+
+ 		document.querySelector(".box5").onclick = function() {
+ 		score = score + 1;
+ 		document.querySelector(".box5").style.display = "none"
+ 		document.querySelector(".point").innerHTML = score;
+ 		document.querySelector(".pink").style.textDecoration = "line-through"
+ 	}
+ </script>
+ </body>
+ </html>
